@@ -1,0 +1,3 @@
+GET http://192.168.163.136:50070/webhdfs/v1/test/test.txt?user.name=root&op=open HTTP/1.1
+
+GET http://192.168.163.136:50070/webhdfs/v1/input?op=LISTSTATUS HTTP/1.1
