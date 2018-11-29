@@ -71,4 +71,12 @@
 ## 文件自动归档
 ### python提取文件中的时间
 
-》
+> 文件名称为 [attribute]#[time].txt 如 test#2018-12-12-10-34.txt
+> 需要使用python提取其中的时间
+
+```python
+import re
+
+data = 'test#2018-12-12-10-34.txt'
+mat = re.search(r'(\d{4})-(\d{1,2})-(\d{1,2})-(\d{1,2})-(\d{1,2})', data)
+```
